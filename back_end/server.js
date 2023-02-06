@@ -1,26 +1,17 @@
-import express from 'express'
-import cors from 'cors'
-import bodyParser from 'body-parser'
+import Koa from 'koa'
+import './config/database.js'
+import bodyParser from 'koa-bodyparser'
+import API_router from './routes/index.js'
+import cors from '@koa/cors'
+import respond from 'koa-respond'
 
-const hostname = '127.0.0.1';
-const port = 3000;
-const app = express();
+const app = new Koa()
 
-app.use(cors()); 
-app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app
+.use(cors({origin : '*'}))
+.use(bodyParser())
+.use(respond())
+.use(API_router.routes())
+.use(API_router.allowedMethods())
 
-app.get('/', (req, res) => {
-  res.set('Content-Type', 'text/html');
-  res.send('Hello here is my back end !');
-});
-
-app.get('/categories', (req, res) => {
-  res.send('Here are the categories')
-})
-
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.listen(process.env.PORT, () => console.log(`Server is listening on PORT: ${process.env.PORT}`))
