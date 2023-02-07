@@ -1,9 +1,9 @@
 import Header from '../Header/header'
-import '../css/App.css'
+import '../../css/App.css'
 
 export default function Categories(){
     return(
-      <><Header /><div className="App">
+    <div className="App">
         <header className="App-header">
           <p>
             ceci est un test
@@ -17,6 +17,6 @@ export default function Categories(){
             Learn React
           </a>
         </header>
-      </div></>
+      </div>
     )
 }
