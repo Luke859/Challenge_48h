@@ -8,7 +8,7 @@ function header(){
     return (
         <div className='Header'>
             <div className='left'>
-                <Link href='/categories'><IoReorderThree size = {42}/></Link> 
+                <Link to={'/categories'}><IoReorderThree size = {42}/></Link> 
             </div>
             <div className='right'>    
                 <IoBasketOutline size = {42}/>
