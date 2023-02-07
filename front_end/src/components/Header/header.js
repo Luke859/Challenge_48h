@@ -29,7 +29,6 @@ function Header(){
                 <FaUserCircle size = {42}/>
             </div>
             <button onClick={handleSubmit}>Logout</button>
-            
         </div>
     )
 }
