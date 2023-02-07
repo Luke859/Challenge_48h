@@ -2,7 +2,9 @@ import logo from './css/index.css';
 import './css/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Layout/Layout.js'
+import CategoryPage from './components/Categories/Categories';
 import HomePage from './components/Home/HomePage';
+import LoginPage from './components/Login/LoginPage';
 
 const App = () => {
   return (
@@ -11,10 +13,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
-            <Route path='/categories' element={<Categories />} />
-            {/* <Route path="blogs" element={<Blogs />} /> */}
-            {/* <Route path="contact" element={<Contact />} /> */}
-            {/* <Route path="*" element={<NoPage />} /> */}
+            <Route path="login" element={<LoginPage />} />
+            <Route path='/categories' element={<CategoryPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
