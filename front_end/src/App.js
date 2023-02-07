@@ -2,10 +2,11 @@ import logo from './css/index.css';
 import './css/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Layout/Layout.js'
+import CategoryPage from './components/Categories/Categories';
 import HomePage from './components/Home/HomePage';
 import LoginPage from './components/Login/LoginPage';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
@@ -13,8 +14,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
             <Route path="login" element={<LoginPage />} />
-            {/* <Route path="contact" element={<Contact />} /> */}
-            {/* <Route path="*" element={<NoPage />} /> */}
+            <Route path='/categories' element={<CategoryPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
