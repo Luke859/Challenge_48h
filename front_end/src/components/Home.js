@@ -1,5 +1,5 @@
 import logo from '../css/index.css';
-import Header from '../components/header'
+import Header from './header'
 import '../css/App.css'
 
 export default function Home(){

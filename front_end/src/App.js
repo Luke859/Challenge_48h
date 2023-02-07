@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Categories from './pages/Categories';
+import Home from './components/Home';
+import Categories from './components/Categories';
 
 const App = () => {
   return (
