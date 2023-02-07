@@ -4,13 +4,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './Layout/Layout.js'
 import HomePage from './components/Home/HomePage';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
+            <Route path='/categories' element={<Categories />} />
             {/* <Route path="blogs" element={<Blogs />} /> */}
             {/* <Route path="contact" element={<Contact />} /> */}
             {/* <Route path="*" element={<NoPage />} /> */}
