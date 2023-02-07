@@ -1,20 +1,24 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import Home from './components/Home';
-import Categories from './components/Categories';
+import logo from './css/index.css';
+import './css/App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './Layout/Layout.js'
+import HomePage from './components/Home/HomePage';
 
 const App = () => {
   return (
-    <>
+    <div className="App">
       <BrowserRouter>
-        <Routes> 
-          <Route path='/' index={true} element={<Home />} />
-          <Route path='/categories' element={<Categories />} />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path='/categories' element={<Categories />} />
+            {/* <Route path="blogs" element={<Blogs />} /> */}
+            {/* <Route path="contact" element={<Contact />} /> */}
+            {/* <Route path="*" element={<NoPage />} /> */}
+          </Route>
         </Routes>
       </BrowserRouter>
-    </>
-    
+    </div>
   );
 }
 
