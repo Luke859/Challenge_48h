@@ -9,6 +9,10 @@ const categorySchema = new Schema({
     type: String,
     required: true
   }, 
+  picture: {
+    type: String,
+    required: true
+  },
   merchant: {
     type: Schema.Types.ObjectId,
     required: true,

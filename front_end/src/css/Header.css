@@ -12,4 +12,10 @@
 .right{
     display: flex;
     margin: 10px;
+    height: 100%;
+}
+
+.btn
+{
+    height: 100%;
 }

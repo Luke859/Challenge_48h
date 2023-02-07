@@ -26,6 +26,7 @@ export async function create (ctx) {
     // if(!ctx.state.user.id) throw new Error('No user id found')
     const categoryValidate = Joi.object({
       name: Joi.string().required(),
+      picture: Joi.string().required(),
       merchant: Joi.string().required(),
     })
     const { error, value } = categoryValidate.validate(ctx.request.body)
@@ -42,6 +43,7 @@ export async function update (ctx) {
   try {
     const categoryValidate = Joi.object({
       name: Joi.string(),
+      picture: Joi.string(),
       merchant: Joi.string(),
     })
     if(!ctx.params.id) throw new Error('No id supplied')

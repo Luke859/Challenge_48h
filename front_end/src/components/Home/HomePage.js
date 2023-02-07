@@ -4,7 +4,6 @@ import '../../css/HomePage.css'
 const HomePage = () => {
   return (
     <>
-        <h1>Atomics Alpaga Market</h1>
         <div className="search-container">
             <form action="/">
                 <input type={"text"} placeholder={"Search.."} name={"search"} className="search"></input>
@@ -14,48 +13,48 @@ const HomePage = () => {
           <div className="card">
               <img className="card-img-top" src="..." alt="Card image cap" />
               <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 className="card-title">Articles les plus vendus</h5>
+                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus leo libero, et volutpat erat hendrerit et. Integer tincidunt mauris a erat auctor, sit amet fringilla nisl tincidunt. Quisque ac.</p>
                   <a href="/" className="btn btn-primary">Go somewhere</a>
               </div>
           </div>
           <div className="card">
               <img className="card-img-top" src="..." alt="Card image cap" />
               <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 className="card-title">Articles les plus vendus</h5>
+                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus leo libero, et volutpat erat hendrerit et. Integer tincidunt mauris a erat auctor, sit amet fringilla nisl tincidunt. Quisque ac.</p>
                   <a href="/" className="btn btn-primary">Go somewhere</a>
               </div>
           </div>
           <div className="card">
               <img className="card-img-top" src="..." alt="Card image cap" />
               <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 className="card-title">Articles les plus vendus</h5>
+                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus leo libero, et volutpat erat hendrerit et. Integer tincidunt mauris a erat auctor, sit amet fringilla nisl tincidunt. Quisque ac.</p>
                   <a href="/" className="btn btn-primary">Go somewhere</a>
               </div>
           </div>
           <div className="card">
               <img className="card-img-top" src="..." alt="Card image cap" />
               <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 className="card-title">Articles les plus vendus</h5>
+                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus leo libero, et volutpat erat hendrerit et. Integer tincidunt mauris a erat auctor, sit amet fringilla nisl tincidunt. Quisque ac.</p>
                   <a href="/" className="btn btn-primary">Go somewhere</a>
               </div>
           </div>
           <div className="card">
               <img className="card-img-top" src="..." alt="Card image cap" />
               <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 className="card-title">Articles les plus vendus</h5>
+                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus leo libero, et volutpat erat hendrerit et. Integer tincidunt mauris a erat auctor, sit amet fringilla nisl tincidunt. Quisque ac.</p>
                   <a href="/" className="btn btn-primary">Go somewhere</a>
               </div>
           </div>
           <div className="card">
               <img className="card-img-top" src="..." alt="Card image cap" />
               <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 className="card-title">Articles les plus vendus</h5>
+                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus leo libero, et volutpat erat hendrerit et. Integer tincidunt mauris a erat auctor, sit amet fringilla nisl tincidunt. Quisque ac.</p>
                   <a href="/" className="btn btn-primary">Go somewhere</a>
               </div>
           </div>
