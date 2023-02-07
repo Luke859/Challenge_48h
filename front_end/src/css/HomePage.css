@@ -1,0 +1,17 @@
+.search
+{
+    margin-top: 1%;
+    width: 25%;
+    border-radius: 45px;
+    background-color: grey;
+}
+
+.search::placeholder
+{
+    color: black;
+}
+
+h1
+{
+    margin-top: 2%;
+}
