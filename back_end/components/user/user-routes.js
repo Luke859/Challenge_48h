@@ -1,5 +1,5 @@
 import Router from '@koa/router'
-import * as UserControllers from './user-controllers.js'
+import * as UserControllers from '../user/user-controllers.js'
 // import * as TaskControllers from '#components/task/task-controllers.js'
 import { isAuthenticatedWithUser } from "../../middlewares/jwt-handler.js"
 

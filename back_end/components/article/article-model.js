@@ -3,12 +3,25 @@ import mongoose from 'mongoose'
 const { Schema } = mongoose
 
 const articleSchema = new Schema({
-  title: {
+  name: {
     type: String,
     required: true
   },
   description: {
     type: String
+  },
+  price:{
+    type: Number,
+    required: true
+  },
+  image:{
+    type: String,
+    required: true
+  }, 
+  categories: {
+    type: Schema.Types.ObjectId,
+    required: true,
+    ref: 'Category'
   }
   // ,
   // creator: {
@@ -20,20 +33,11 @@ const articleSchema = new Schema({
   timestamps: true
 })
 
-// articleSchema.static({
-//   findByArticleId (listId) {
-//     return this.find({ list: listId })
-//   },
-//   findOneByCreatorId(creatorId, articleId) {
-//     return this.findOne({ creator: creatorId, _id: articleId })
-//   },
-//   findOneByCreatorIdAndUpdate(creatorId, articleId, updateArticle) {
-//     return this.findOneAndUpdate({ creator: creatorId, _id: articleId }, updateArticle)
-//   },
-//   findOneByCreatorIdAndDelete(creatorId, articleId) {
-//     return this.findOneAndDelete({ creator: creatorId, _id: articleId })
-//   }
-// })
+articleSchema.static({
+  findByCategoryId (categoryId) {
+    return this.find({ categories: categoryId })
+  }
+})
 
 const Article = mongoose.model('Article', articleSchema)
 
