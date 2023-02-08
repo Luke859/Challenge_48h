@@ -1,26 +1,27 @@
 import axios from "axios";
 import React from "react";
-import { Link, useNavigate} from "react-router-dom";
-import '../../css/Login.css'
+import { Link, useNavigate } from "react-router-dom";
+import '../../css/Register.css'
 
-function LoginPage() {
+function RegisterPage() {
     
     const navigate = useNavigate();
     const [email, setEmail] = React.useState('');
+    console.log('Mail' + email);
     const [password, setPassword] = React.useState('');
+    const [terms, setTerms] = React.useState(false);
 
     const handleSubmit = () => {
 
         const userData = {
             email : email,
-            password: password
+            password: password,
+            terms_and_conditions: terms
         }
 
-        axios.post('http://localhost:5000/api/users/login', userData)
+        axios.post('http://localhost:5000/api/users/register', userData)
         .then((res) => {
-            const token = res.data.message;
-            localStorage.setItem('token', token)
-            navigate('/')
+            navigate('/login')
             alert("Login sucessfull !!")
         }).catch((err) => {
             alert("Error: " + err.message)
@@ -29,9 +30,9 @@ function LoginPage() {
 
     return (
         <>
-        <div class="loginPage">
-            <h1>Login</h1>
-            <div class="loginForm">
+        <div class="registerPage">
+            <h1>Register</h1>
+            <div class="registerForm">
                 {/* <form onSubmit={handleSubmit}> */}
                     <div className="mb-3">
                         <label class="form-label" >Email </label>
@@ -41,8 +42,11 @@ function LoginPage() {
                         <label class="form-label" >Password </label>
                         <input class="form-control" type="password" onChange={(password) => setPassword(password.target.value)} required />
                     </div>
-                    <button onClick={handleSubmit}>Login</button>
-                    <p className="redirect_login">Vous avez pas de compte ? <Link to="/register">Inscrivez-vous</Link></p>
+                    <div className="button-container">
+                        <input type="checkbox" onChange={(terms) => setTerms(terms.target.checked)} required/>
+                    </div>
+                    <button onClick={handleSubmit}> Register</button>
+                    <p className="redirect_login">Vous avez déjà un compte ? <Link to="/login">Connectez-vous</Link></p>
                 {/* </form> */}
             </div>
         </div>
@@ -50,4 +54,4 @@ function LoginPage() {
     );
 }
   
-  export default LoginPage
+  export default RegisterPage
