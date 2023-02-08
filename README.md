@@ -29,7 +29,7 @@ The project belongs to its authors. ✍️
 - `LE BOURHIS Evan` => evan.lebourhis@ynov.com 👨‍🎓   
 
 
-# Used tools and technologies :
+# Used tools and technologies 🇫🇷 :
 
 - React 👨‍💻
 - JS 👨‍💻
@@ -39,6 +39,15 @@ The project belongs to its authors. ✍️
 - JSON ⚙️
 - HTML 🖌️
 - CSS 🖌️
+
+Durant ce projet, le site web sera développé en React.js pour le front-end, en Node.js pour le back-end et avec MongoDB pour la base de données.
+
+L’utilisation de React.js se justifie car il s’agit actuellement de la techno la plus simple d’utilisation et la plus fréquente lors du développement d’un site web.
+
+L’utilisation de NodeJs se justifie par son utilisation assez simple et permet d’exécuter plusieurs requêtes vers le serveur simultanément et cela permet également de réduire le temps de développement car on n’utilise que du javascript sur l'entièreté du site web.
+
+L’utilisation de MongoDB pour la base de données s’explique par sa simplicité d’utilisation, mais aussi et surtout pour sa capacité à gérer des volumes plus importants de données de tous types, par rapport à une base de données relationnelle traditionnelle.
+
 
 
 # Instructions 🇫🇷 : 
