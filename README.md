@@ -39,6 +39,7 @@ The project belongs to its authors. ✍️
 - JSON ⚙️
 - HTML 🖌️
 - CSS 🖌️
+- Trello 🗓️
 
 Durant ce projet, le site web sera développé en React.js pour le front-end, en Node.js pour le back-end et avec MongoDB pour la base de données.
 
