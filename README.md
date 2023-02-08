@@ -50,7 +50,6 @@ L’utilisation de NodeJs se justifie par son utilisation assez simple et permet
 L’utilisation de MongoDB pour la base de données s’explique par sa simplicité d’utilisation, mais aussi et surtout pour sa capacité à gérer des volumes plus importants de données de tous types, par rapport à une base de données relationnelle traditionnelle.
 
 
-
 # Instructions 🇫🇷 : 
 
 - En ce qui concerne le lancement du projet, tout d’abord il vous suffit de lancer un terminal au niveau de la racine du projet et d’effectuer un « npm install ».
